@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Analysis Web App (TradingView)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>📊 Stock Analysis Web Application</h1>
+        <p>Live Candlestick Chart · Powered by TradingView</p>
+    </header>
+    <main>
+        <section id="search-section">
+            <input type="text" id="stock-input" placeholder="Enter Stock Symbol (e.g., AAPL, TSLA, BTCUSD)">
+            <button id="search-btn">Load Chart</button>
+            <span id="error-message"></span>
+        </section>
+        <section id="chart-section">
+            <iframe id="tv-iframe"
+                src=""
+                frameborder="0"
+                allowtransparency="true"
+                scrolling="no"
+                allowfullscreen
+                style="width: 100%; height: 500px; border-radius: 12px; background: #161a25;">
+            </iframe>
+        </section>
+        <section id="info-section">
+            <h2>How to Use</h2>
+            <ul>
+                <li>Supports stocks, crypto, forex (try <b>AAPL</b>, <b>TSLA</b>, <b>MSFT</b>, <b>BTCUSD</b>, <b>EURUSD</b>).</li>
+                <li>Candlestick chart with zoom, pan, indicators, and dark mode.</li>
+                <li>Reloads instantly for any valid symbol.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <small>Charts powered by <a href="https://www.tradingview.com" target="_blank">TradingView</a></small>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
