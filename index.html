@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Stock Analysis & Prediction Web App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Stock Analysis & Prediction Web App</h1>
+        </header>
+
+        <main>
+            <div id="main-flex">
+
+                <div id="left-panel">
+                    <h2 id="chart-title">Chart (Trading View)</h2>
+
+                    <section id="search-section">
+                        <input type="text" id="stock-input" placeholder="Enter Stock Symbol (e.g., AAPL, TSLA, BTCUSD)">
+                        <button id="search-btn">Load Chart</button>
+                        <span id="error-message"></span>
+                        <div id="example-symbols">
+                            <span class="example-symbol">AAPL</span> | 
+                            <span class="example-symbol">TSLA</span> | 
+                            <span class="example-symbol">MSFT</span> | 
+                            <span class="example-symbol">GOOGL</span> | 
+                            <span class="example-symbol">BTCUSD</span>
+                        </div>
+                    </section>
+
+                    <section id="chart-section">
+                        <iframe id="tv-iframe"
+                            src=""
+                            frameborder="0"
+                            allowtransparency="true"
+                            scrolling="no"
+                            allowfullscreen
+                            style="width: 100%; border-radius: 12px; background: #161a25;">
+                        </iframe>
+                    </section>
+                </div>
+
+                <div id="right-panel">
+                    <section id="prediction-section">
+                        <h2>Price Prediction (Linear Regression)</h2>
+                        <div id="prediction-result">-</div>
+                    </section>
+                </div>
+
+            </div>
+        </main>
+
+        <footer>
+            <p><b>Jeff Kok Jue Xi | 1211106263 | TWT6223 Individual Assignment</b></p>
+        </footer>
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>

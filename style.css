@@ -1,0 +1,183 @@
+/* ========== GLOBAL BASE STYLES ========== */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #161a25;
+    color: #f7f7ff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ========== HEADER & FOOTER ========== */
+header, footer {
+    background: #232b3a;
+    color: #42a5f5;
+    text-align: center;
+    padding: 0em 1em;
+    flex-shrink: 0;
+}
+
+/* ========== LAYOUT: MAIN CONTAINER & FLEX PANELS ========== */
+main {
+    margin: 1em 1em;  
+    background: black;
+    border-radius: 16px;
+    padding: 1em 1em;
+    box-shadow: 0 4px 24px #0006;
+    flex: 1 0 auto;
+}
+
+#main-flex {
+    display: flex;
+    gap: 2em;
+}
+
+#left-panel {
+    flex: 3 1 0;
+    min-width: 0;
+}
+
+#right-panel {
+    flex: 1 1 0;
+    min-width: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* ========== RESPONSIVENESS ========== */
+@media (max-width: 950px) {
+    #main-flex {
+        flex-direction: column;
+    }
+    #right-panel {
+        width: 100%;
+        min-width: 0;
+        margin-top: 2em;
+    }
+    #prediction-section {
+        position: static;
+        box-shadow: none;
+        margin-top: 0.5em;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 1em;
+    }
+    #search-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+/* ========== CHART AREA & TITLE ========== */
+#chart-title {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0.8em;
+    font-size: 1.6em;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+}
+
+#chart-section {
+    margin-bottom: 0.5em;
+}
+
+#tv-iframe {
+    margin-top: 1em;
+    display: block;
+    width: 100%;
+    height: calc(100vh - 350px);
+    border-radius: 12px;
+    background: #161a25;
+}
+
+/* ========== SEARCH BAR & EXAMPLES ========== */
+#search-section {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+#stock-input {
+    flex: 1;
+    padding: 0.8em;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.1em;
+    background: #161a25;
+    color: #f7f7ff;
+}
+
+#search-btn {
+    padding: 0.7em 1.3em;
+    background: #222a35;
+    color: #42a5f5;
+    border: 1px solid #42a5f5;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+}
+#search-btn:hover {
+    background: #42a5f5;
+    color: #232b3a;
+}
+
+#error-message {
+    color: #ff5555;
+    margin-left: 1em;
+    font-size: 1em;
+}
+
+/* ========== EXAMPLE SYMBOLS ========== */
+#example-symbols {
+    margin-top: 0.7em;
+    color: #a2a9b9;
+    font-size: 1em;
+    user-select: none;
+}
+.example-symbol {
+    cursor: pointer;
+    color: #42a5f5;
+    font-weight: 500;
+    transition: text-decoration 0.2s;
+}
+.example-symbol:hover {
+    text-decoration: underline;
+    color: #81d4fa;
+}
+
+/* ========== PREDICTION PANEL ========== */
+#prediction-section {
+    position: sticky;  /* Sticky on scroll for desktop */
+    top: 2em;
+    background: #232b3a;
+    color: #fff;
+    border-radius: 8px;
+    padding: 1em 1.5em;
+    margin-top: 0;
+    font-size: 1.3em;
+    box-shadow: 0 2px 12px #0002;
+    padding-top: 0.2em;
+}
+#prediction-section h2 {
+    color: #fff;
+    margin-bottom: 0.5em;
+}
+#prediction-result {
+    margin-top: 0.6em;
+    font-family: 'Segoe UI', Arial, monospace;
+}
+
