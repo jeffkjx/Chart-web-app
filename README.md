@@ -22,12 +22,12 @@ This is an individual assignment project for the **Web Technique and Application
 
 ## 📁 File Overview
 
-| File         | Description                                          |
-|--------------|------------------------------------------------------|
-| `index.html` | Main webpage and layout structure                    |
-| `style.css`  | Custom styles for responsive and themed UI           |
+| File         | Description                                           |
+| ------------ | ----------------------------------------------------- |
+| `index.html` | Main webpage and layout structure                     |
+| `style.css`  | Custom styles for responsive and themed UI            |
 | `script.js`  | JS logic for fetching chart + making price prediction |
-| `README.md`  | Project overview and setup instructions              |
+| `README.md`  | Project overview and setup instructions               |
 
 ---
 
@@ -43,6 +43,7 @@ This is an individual assignment project for the **Web Technique and Application
 ## 🛠️ How to Run Locally
 
 1. **Clone this repository**:
+
    ```bash
    git clone https://github.com/jeffkjx/Chart-web-app.git
    ```
@@ -55,7 +56,7 @@ This is an individual assignment project for the **Web Technique and Application
 
 ## 📸 Screenshot
 
-![screenshot](https://jeffkjx.github.io/Chart-web-app/screenshot-placeholder.png)
+![screenshot](https://jeffkjx.github.io/Chart-web-app/screenshot.png)
 
 > _(Add a real screenshot if available by saving it in your repo and updating this path)_
 
