@@ -58,8 +58,6 @@ This is an individual assignment project for the **Web Technique and Application
 
 ![screenshot](https://jeffkjx.github.io/Chart-web-app/screenshot.png)
 
-> _(Add a real screenshot if available by saving it in your repo and updating this path)_
-
 ---
 
 ## 📄 Acknowledgements
