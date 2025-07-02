@@ -6,7 +6,7 @@ const predictionResult = document.getElementById('prediction-result');
 
 // --- Chart ---
 function loadChart(symbol) {
-    tvIframe.src = `https://s.tradingview.com/widgetembed/?symbol=${encodeURIComponent(symbol)}&interval=D&theme=light&style=1&toolbarbg=161a25&withdateranges=1&hide_side_toolbar=0&allow_symbol_change=1&studies=MACD%40tv-basicstudies,RSI%40tv-basicstudies,MAExp%40tv-basicstudies&hideideas=1&saveimage=0&calendar=1&hotlist=0&showpopupbutton=0&locale=en#`;
+    tvIframe.src = `https://s.tradingview.com/widgetembed/?symbol=${encodeURIComponent(symbol)}&interval=D&theme=dark&style=1&toolbarbg=161a25&withdateranges=1&hide_side_toolbar=0&allow_symbol_change=1&studies=MACD%40tv-basicstudies,RSI%40tv-basicstudies,MAExp%40tv-basicstudies&hideideas=1&saveimage=0&calendar=1&hotlist=0&showpopupbutton=0&locale=en#`;
 }
 
 // --- Prediction ---
